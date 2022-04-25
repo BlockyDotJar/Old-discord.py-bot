@@ -172,4 +172,4 @@ def isTempChannel(channel):
 
 # ---------------------------------------------------------------------
 
-bot.run("ODM4NzMzNzQ5NzYzNTcxNzcy.YI_ZrA.EWgRa6_mcsMIbIWcYjxwGQcxCSc")
+bot.run("BOT_TOKEN")
