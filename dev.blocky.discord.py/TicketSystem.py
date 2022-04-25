@@ -86,4 +86,4 @@ async def config_ticket(ctx, msg: discord.Message = None, category: discord.Cate
     await ctx.channel.send("Das Ticketsystem wurde erfolgreich konfiguriert.")
 
 
-bot.run("ODEyMzM1MDEyNzI4NDA2MDQ2.YC_P7w.nT9CO_Nt5jcZz5wblVicWOOSf_w")
+bot.run("BOT_TOKEN")
