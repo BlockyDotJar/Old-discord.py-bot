@@ -104,8 +104,7 @@ async def sendAll(message: Message):
         if 'discord.gg' not in invite:
             'https://discord.gg/{}'.format(invite)
         links += f"[Bot Invite]" \
-                 f"(https://discord.com/oauth2/authorize?client_id=812335012728406046&permissions=1428885466199&scope" \
-                 f"=applications.commands%20bot) "
+                 f"() "
 
     embed.add_field(name='⠀', value='⠀', inline=False)
     embed.add_field(name='Links & Hilfe', value=links, inline=False)
