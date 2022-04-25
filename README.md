@@ -6,4 +6,4 @@ If you want, you can use my code, for your bot.
 <br><br>
 The only things you need is a IDE (i recommend [PyCharm](https://www.jetbrains.com/de-de/pycharm/)), [python](https://www.python.org/) and [discord.py](https://github.com/Rapptz/discord.py) installed on your PC.
 <br><br>
-You can quickly setup your bot, in which you are replacing `BOT_TOKEN` against the Token of your Bot
+You can quickly setup your bot, in which you are replacing `BOT_TOKEN` against the Token of your Bot and `PREFIX` with your Prefix
