@@ -86,4 +86,4 @@ async def warnings(ctx, member: discord.Member = None):
         await ctx.send("Diese Nutzer hat keine Verwarnungen")
 
 
-bot.run("ODEyMzM1MDEyNzI4NDA2MDQ2.YC_P7w.nT9CO_Nt5jcZz5wblVicWOOSf_w")
+bot.run("BOT_TOKEN")
