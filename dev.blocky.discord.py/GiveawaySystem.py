@@ -116,4 +116,4 @@ async def greroll(ctx, channel: discord.TextChannel, id_: int):
                        f"<a:ArrowRightGlow:815668040771436555> {winner} <a:among_dance:801390220854820874>")
 
 
-client.run("ODEyMzM1MDEyNzI4NDA2MDQ2.YC_P7w.nT9CO_Nt5jcZz5wblVicWOOSf_w")
+client.run("BOT_TOKEN")
