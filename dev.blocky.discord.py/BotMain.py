@@ -11,7 +11,7 @@ from discord import Guild
 import discord
 from discord.ext import commands
 
-client = commands.Bot(command_prefix=commands.when_mentioned_or(':'), help_command=None,
+client = commands.Bot(command_prefix=commands.when_mentioned_or('PREFIX'), help_command=None,
                       intents=discord.Intents.all())
 
 client.ticket_configs = {}
