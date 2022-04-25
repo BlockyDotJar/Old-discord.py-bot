@@ -4,8 +4,8 @@ from discord.ext import commands
 
 intents = discord.Intents.default()
 intents.members = True
-bot = commands.Bot(command_prefix="MK!", intents=intents)
-bot.warnings = {}  # guild_id : {member_id: [count, [(admin_id, reason)]]}
+bot = commands.Bot(command_prefix="PREFIX", intents=intents)
+bot.warnings = {}
 
 
 @bot.event
