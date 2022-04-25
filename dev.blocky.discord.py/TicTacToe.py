@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import random
 
-client = commands.Bot(command_prefix="MK!")
+client = commands.Bot(command_prefix="PREFIX")
 
 player1 = ""
 player2 = ""
