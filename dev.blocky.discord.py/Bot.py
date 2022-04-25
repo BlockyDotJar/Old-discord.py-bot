@@ -113,7 +113,7 @@ async def on_message(message):
                                    "`MK!beg` - *Du bekommst Geld indem du darum bettelst*\n"
                                    "`MK!with/MK!withdraw` - *Du buchst Geld von deinem Bankkonto ab*\n"
                                    "`MK!dep/MK!deposit` - *Du deponierst Geld in deiner Bank*\n")
-    if message.content.startswith("MK!help-2"):
+    if message.content.startswith("PREFIXhelp-2"):
         await message.channel.send("***Seite 2***  von **2**\r\n"
                                    "`MK!send @User (Geldbetrag)` - *Du gibst einen User Geld*\n"
                                    "`MK!rob @User` - *Du raubst einen User aus*\n"
@@ -139,7 +139,7 @@ async def on_message(message):
                                    " und wenn ein Bot joint bekommt dieser die **Bot** Rolle*\n"
                                    "`Willkommensnachricht` - *Sendet eine Private Nachricht an einen User, "
                                    "der gerade gejoint ist*\n")
-    if message.content.startswith("MK!ban") and message.author.guild_permissions.ban_members:
+    if message.content.startswith("PREFIXban") and message.author.guild_permissions.ban_members:
         args = message.content.split(" ")
         if len(args) == 2:
             member: Member = discord.utils.find(lambda m: args[1] in m.name, message.guild.members)
@@ -149,7 +149,7 @@ async def on_message(message):
             else:
                 await message.channel.send(f"Kein User mit dem Namen {args[1]} gefunden. "
                                            f"Dieser User existiert entweder nicht oder du hast in falsch geschrieben.")
-    if message.content.startswith("MK!unban") and message.author.guild_permissions.ban_members:
+    if message.content.startswith("PREFIXunban") and message.author.guild_permissions.ban_members:
         args = message.content.split(" ")
         if len(args) == 2:
             user: User = discord.utils.find(lambda banentry: args[1] in banentry.user.name,
@@ -160,7 +160,7 @@ async def on_message(message):
             else:
                 await message.channel.send(f"Kein User mit dem Namen {args[1]} gefunden. "
                                            f"Dieser User existiert entweder nicht oder du hast in falsch geschrieben.")
-    if message.content.startswith("MK!kick") and message.author.guild_permissions.kick_members:
+    if message.content.startswith("PREFIXkick") and message.author.guild_permissions.kick_members:
         args = message.content.split(" ")
         if len(args) == 2:
             member: Member = discord.utils.find(lambda m: args[1] in m.name, message.guild.members)
@@ -170,7 +170,7 @@ async def on_message(message):
             else:
                 await message.channel.send(f"Kein User mit dem Namen {args[1]} gefunden. "
                                            f"Dieser User existiert entweder nicht oder du hast in falsch geschrieben.")
-    if message.content.startswith("MK!clear"):
+    if message.content.startswith("PREFIXclear"):
         if message.author.permissions_in(message.channel).manage_messages:
             args = message.content.split(" ")
             if len(args) == 2:
@@ -178,7 +178,7 @@ async def on_message(message):
                     count = int(args[1]) + 1
                     deleted = await message.channel.purge(limit=count, check=is_not_pined)
                     await message.channel.send("{} Nachrichten gelöscht.".format(len(deleted) - 1))
-    if message.content.startswith("MK!8ball"):
+    if message.content.startswith("PREFIX8ball"):
         args = message.content.split(" ")
         if len(args) >= 2:
             frage = " ".join(args[1:])
