@@ -82,7 +82,7 @@ async def warnings(ctx, member: discord.Member = None):
 
         await ctx.send(embed=embed)
 
-    except KeyError:  # no warnings
+    except KeyError: 
         await ctx.send("Diese Nutzer hat keine Verwarnungen")
 
 
