@@ -1,0 +1,5 @@
+
+    [console_scripts]
+    pag = pag.app:app
+    pagcli = pag.app:app
+    
