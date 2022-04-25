@@ -12,7 +12,7 @@ else:
     with open('channels.json', 'w') as f:
         json.dump(channels, f, indent=4)
 
-bot = commands.Bot(command_prefix="t!")
+bot = commands.Bot(command_prefix="PREFIX")
 botcolor = 0x5865F2
 
 bot.remove_command("help")
