@@ -7,7 +7,7 @@ import pytz
 from discord import Message, Guild, TextChannel, Permissions
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix='MK!')
+bot = commands.Bot(command_prefix='PREFIX')
 
 if os.path.isfile("servers.json"):
     with open('servers.json', encoding='utf-8') as f:
