@@ -4,7 +4,7 @@ import aiofiles
 import discord
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix="MK!")
+bot = commands.Bot(command_prefix="PREFIX")
 bot.ticket_configs = {}
 
 
