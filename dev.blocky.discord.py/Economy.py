@@ -3,11 +3,8 @@ import random
 import discord
 from discord.ext import commands
 import json
-import os
 
-os.chdir("C:\\Users\\Dominic\\PycharmProjects\\pythonProject2\\dev.blocky.discord.py")
-
-client = commands.Bot(command_prefix=commands.when_mentioned_or('MK!'), help_command=None,
+client = commands.Bot(command_prefix=commands.when_mentioned_or('PREFIX'), help_command=None,
                       intents=discord.Intents.all())
 
 mainshop = [{"Name": "Schokolade", "Preis": 10, "Beschreibung": "Essen"},
