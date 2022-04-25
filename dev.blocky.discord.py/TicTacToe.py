@@ -144,4 +144,4 @@ async def place_error(ctx, error):
         await ctx.send("Bitte gib einen Integer ein. :1234:")
 
 
-client.run("ODEyMzM1MDEyNzI4NDA2MDQ2.YC_P7w.nT9CO_Nt5jcZz5wblVicWOOSf_w")
+client.run("BOT_TOKEN")
