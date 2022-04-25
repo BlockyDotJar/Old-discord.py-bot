@@ -1,5 +1,3 @@
-# Old-discord.py-bot
-
 Here you can see the complete Code of my old discord.py bot.
 <br>
 This will not updated in the future, because i do not work on this bot anymore.
